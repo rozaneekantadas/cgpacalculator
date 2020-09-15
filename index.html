@@ -17,13 +17,13 @@
 
         <center>
 
-            <div id="form">
+            <div id="formtag">
 
-                <input type="text" name="semestername" id="sName" placeholder="Semester Name"/><br><br>
-                <input type="number" name="credit" id="sCredit" placeholder="Credit"/><br><br>
-                <input type="number" name="grade" id="sGrade" placeholder="Grade"/>
+                <input type="text" name="semestername" id="sName" placeholder="Semester Name"/>
+                <input type="number" name="credit" id="sCredit" placeholder="Credit"/>
+                <input type="number" name="grade" id="sGrade" placeholder="SGPA"/>
 
-                <br><br><button type="button" onclick="addTable()">Add</button><br><br>
+                <br><br><button type="button" id="addButton" onclick="addTable()">Add</button><br><br>
             </div>
 
         </center>
@@ -41,7 +41,8 @@
         </center>
 
         <center>
-            <button type="button" id="calculateButton" onclick="calculatePoint()">Calculate CGPA</button><br><br>
+            <button type="button" id="calculateButton" onclick="calculatePoint()">Calculate CGPA</button>
+            <button type="button" id="printButton" onclick="printPage()">Print</button>
         </center>
         
     </div>
@@ -51,7 +52,12 @@
 
         <center>
             <h2><u>Semester Wise Total Credit</u></h2>
-            <p1>Old Curriculum</p1>
+        </center>
+
+        <div id="leftSide">
+            
+            <center>
+                <p1>Old Curriculum</p1>
             <table id="old">
                 <tr>
                     <th>Semester</th>
@@ -106,8 +112,16 @@
                     <td>9</td>
                 </tr>
             </table>
-            <br><br>
-            <p1>New Curriculum</p1>
+            </center>
+            
+
+        </div>
+
+        <div id="rightSide">
+
+            <center>
+
+                <p1>New Curriculum</p1>
             <table id="new">
                 <tr>
                     <th>Semester</th>
@@ -138,15 +152,12 @@
                     <td>12</td>
                 </tr>
             </table>
-        </center>
+
+            </center>
+
+        </div>
 
     </div>
-
-    <footer>
-        <center>
-            <p1>© 2020 Copyright: Rozanee Kanta Das</p1>
-        </center>
-    </footer>
 
 </body>
 

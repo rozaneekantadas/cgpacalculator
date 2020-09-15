@@ -55,6 +55,10 @@ function calculatePoint(){
         cell3.innerHTML = "CGPA: "+finalCgpa;
 
         document.getElementById("calculateButton").style.display = 'none';
-        document.getElementById("form").style.display = 'block';
+        document.getElementById("printButton").style.display = 'block';
+        document.getElementById("formtag").style.display = 'none';
+}
 
+function printPage(){
+    window.print();
 }

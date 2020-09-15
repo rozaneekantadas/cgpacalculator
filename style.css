@@ -1,27 +1,83 @@
+header{
+    background-color: #4CAF50;
+    padding: 5px;
+    color: white;
+    font-style: bold;
+    margin-bottom: 30px;
+}
+
+input[type=text], input[type=number]{
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#addButton, #calculateButton, #printButton {
+    width: 40%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#addButton:hover, #calculateButton, #printButton {
+    background-color: #45a049;
+  }
+
+div #formtag{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 60%;
+  }
+
 #col1{
     position: relative;
-    width: 70%;
+    width: 60%;
     float: left;
     height: 100%;
     z-index: 1010101010
-}
-
-#calculateButton{
-    display: none;
 }
 
 #col2{
     position: relative;
-    width: 30%;
+    width: 40%;
     float: left;
     height: 100%;
     z-index: 1010101010
+}
+
+#leftSide{
+    position: relative;
+    width: 50%;
+    float: left;
+    height: 100%;
+    z-index: 1010101010
+}
+
+#rightSide{
+    position: relative;
+    width: 50%;
+    float: left;
+    height: 100%;
+    z-index: 1010101010
+}
+
+#calculateButton, #printButton{
+    display: none;
 }
 
 #cgtable{
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     border-collapse: collapse;
-    width: 70%;
+    width: 90%;
   }
 
 #cgtable th{
@@ -54,6 +110,10 @@
     border: 1px solid #ddd;
     padding: 5px;
 }
+
+#new tr:nth-child(even), #old tr:nth-child(even) {background-color: #f2f2f2;}
+
+#new tr:hover, #old tr:hover {background-color: #ddd;}
 
 
 
