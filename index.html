@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<head>
+    <title>CGPA Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css"></link>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <center>
+            <h1>CGPA Calculator</h1>
+        </center>
+    </header>
+
+    <div id="col1">
+
+        <center>
+
+            <div id="form">
+
+                <input type="text" name="semestername" id="sName" placeholder="Semester Name"/><br><br>
+                <input type="number" name="credit" id="sCredit" placeholder="Credit"/><br><br>
+                <input type="number" name="grade" id="sGrade" placeholder="Grade"/>
+
+                <br><br><button type="button" onclick="addTable()">Add</button><br><br>
+            </div>
+
+        </center>
+
+        <center>
+            <h2>SGPA Table</h2>
+            <table id="cgtable">
+                <tr>
+                    <th>Semester</th>
+                    <th>Credit</th>
+                    <th>SGPA</th>
+                </tr>
+            </table><br>
+
+        </center>
+
+        <center>
+            <button type="button" id="calculateButton" onclick="calculatePoint()">Calculate CGPA</button><br><br>
+        </center>
+        
+    </div>
+
+
+    <div id="col2">
+
+        <center>
+            <h2><u>Semester Wise Total Credit</u></h2>
+            <p1>Old Curriculum</p1>
+            <table id="old">
+                <tr>
+                    <th>Semester</th>
+                    <th>Credit</th>
+                </tr>
+                <tr>
+                    <td>1st Semester</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>2nd Semester</td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <td>3rd Semester</td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <td>4th Semester</td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <td>5th Semester</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <td>6th Semester</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>7th Semester</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <td>8th Semester</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>9th Semester</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>10th Semester</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>11th Semester</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>12th Semester</td>
+                    <td>9</td>
+                </tr>
+            </table>
+            <br><br>
+            <p1>New Curriculum</p1>
+            <table id="new">
+                <tr>
+                    <th>Semester</th>
+                    <th>Credit</th>
+                </tr>
+                <tr>
+                    <td>1st Semester</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>2nd Semester</td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <td>3rd Semester</td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <td>4th Semester</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>5th Semester</td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <td>6th Semester</td>
+                    <td>12</td>
+                </tr>
+            </table>
+        </center>
+
+    </div>
+
+    <footer>
+        <center>
+            <p1>© 2020 Copyright: Rozanee Kanta Das</p1>
+        </center>
+    </footer>
+
+</body>
+
+</html>
