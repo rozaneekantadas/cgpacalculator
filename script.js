@@ -60,5 +60,9 @@ function calculatePoint(){
 }
 
 function printPage(){
+    var print_area = document.getElementById('col1').innerHTML;
+    var orginalContent = document.body.innerHTML;
+    document.body.innerHTML = print_area;
     window.print();
+    document.body.innerHTML = orginalContent;
 }
