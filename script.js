@@ -1,6 +1,10 @@
 var totalPoint = 0;
 var totalCredit = 0;
 var count = 0;
+var name;
+var uname;
+var uid;
+var udep;
 
 function addTable(){
 
@@ -60,9 +64,38 @@ function calculatePoint(){
 }
 
 function printPage(){
+
     var print_area = document.getElementById('col1').innerHTML;
     var orginalContent = document.body.innerHTML;
     document.body.innerHTML = print_area;
     window.print();
     document.body.innerHTML = orginalContent;
+}
+
+function addUserInfo(){
+
+    var nameTag = document.getElementById("uname");
+    var idTag = document.getElementById("uid");
+    var departmentTag = document.getElementById("udepartment");
+    var varsityTag = document.getElementById("uvarsity");
+
+    name = nameTag.value;
+    uname = varsityTag.value;
+    uid = idTag.value;
+    udep = departmentTag.value;
+
+    if(name == '' || uname == '' || uid == '' || udep == ''){
+        alert("All information required");
+    }
+    else{
+
+        document.getElementById("n").innerHTML = name;
+        document.getElementById("i").innerHTML = uid;
+        document.getElementById("d").innerHTML = udep;
+        document.getElementById("v").innerHTML = uname;
+
+        document.getElementById("about").style.display = 'none';
+        document.getElementById("cgcol").style.display = 'block';
+    }
+
 }

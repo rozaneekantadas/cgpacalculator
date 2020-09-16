@@ -6,6 +6,16 @@ header{
     margin-bottom: 30px;
 }
 
+#n, #i, #v, #d{
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
 input[type=text], input[type=number]{
     width: 40%;
     padding: 12px 20px;
@@ -16,7 +26,12 @@ input[type=text], input[type=number]{
     box-sizing: border-box;
 }
 
-#addButton, #calculateButton, #printButton {
+#cgcol{
+    display: none;
+    padding-bottom: 10px;
+}
+
+#addButton, #calculateButton, #printButton, #nextButton {
     width: 40%;
     background-color: #4CAF50;
     color: white;
@@ -31,7 +46,11 @@ input[type=text], input[type=number]{
     background-color: #45a049;
   }
 
-div #formtag{
+#formtag{
+    margin-top: 10px;
+}
+
+#formtag, #about{
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;

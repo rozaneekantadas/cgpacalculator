@@ -13,148 +13,171 @@
         </center>
     </header>
 
-    <div id="col1">
+    <center>
+        <div id="about">
 
-        <center>
-
-            <div id="formtag">
-
-                <input type="text" name="semestername" id="sName" placeholder="Semester Name"/>
-                <input type="number" name="credit" id="sCredit" placeholder="Credit"/>
-                <input type="number" name="grade" id="sGrade" placeholder="SGPA"/>
-
-                <br><br><button type="button" id="addButton" onclick="addTable()">Add</button><br><br>
-            </div>
-
-        </center>
-
-        <center>
-            <h2>SGPA Table</h2>
-            <table id="cgtable">
-                <tr>
-                    <th>Semester</th>
-                    <th>Credit</th>
-                    <th>SGPA</th>
-                </tr>
-            </table><br>
-
-        </center>
-
-        <center>
-            <button type="button" id="calculateButton" onclick="calculatePoint()">Calculate CGPA</button>
-            <button type="button" id="printButton" onclick="printPage()">Print</button>
-        </center>
-        
-    </div>
-
-
-    <div id="col2">
-
-        <center>
-            <h2><u>Semester Wise Total Credit</u></h2>
-        </center>
-
-        <div id="leftSide">
-            
-            <center>
-                <p1>Old Curriculum</p1>
-            <table id="old">
-                <tr>
-                    <th>Semester</th>
-                    <th>Credit</th>
-                </tr>
-                <tr>
-                    <td>1st Semester</td>
-                    <td>12</td>
-                </tr>
-                <tr>
-                    <td>2nd Semester</td>
-                    <td>14</td>
-                </tr>
-                <tr>
-                    <td>3rd Semester</td>
-                    <td>14</td>
-                </tr>
-                <tr>
-                    <td>4th Semester</td>
-                    <td>14</td>
-                </tr>
-                <tr>
-                    <td>5th Semester</td>
-                    <td>11</td>
-                </tr>
-                <tr>
-                    <td>6th Semester</td>
-                    <td>13</td>
-                </tr>
-                <tr>
-                    <td>7th Semester</td>
-                    <td>11</td>
-                </tr>
-                <tr>
-                    <td>8th Semester</td>
-                    <td>13</td>
-                </tr>
-                <tr>
-                    <td>9th Semester</td>
-                    <td>12</td>
-                </tr>
-                <tr>
-                    <td>10th Semester</td>
-                    <td>12</td>
-                </tr>
-                <tr>
-                    <td>11th Semester</td>
-                    <td>13</td>
-                </tr>
-                <tr>
-                    <td>12th Semester</td>
-                    <td>9</td>
-                </tr>
-            </table>
-            </center>
-            
+            <input type="text" name="username" id="uname" placeholder="Your Name"/><br>
+            <input type="text" name="id" id="uid" placeholder="Student ID"/><br>
+            <input type="text" name="department" id="udepartment" placeholder="Department Name"/><br>
+            <input type="text" name="varsity" id="uvarsity" placeholder="University Name"/>
+    
+            <br><br><button type="button" id="nextButton" onclick="addUserInfo()">Next</button><br><br>
 
         </div>
 
-        <div id="rightSide">
+    </center>
+
+    <div id="cgcol">
+
+        <div id="col1">
 
             <center>
 
-                <p1>New Curriculum</p1>
-            <table id="new">
-                <tr>
-                    <th>Semester</th>
-                    <th>Credit</th>
-                </tr>
-                <tr>
-                    <td>1st Semester</td>
-                    <td>16</td>
-                </tr>
-                <tr>
-                    <td>2nd Semester</td>
-                    <td>14</td>
-                </tr>
-                <tr>
-                    <td>3rd Semester</td>
-                    <td>14</td>
-                </tr>
-                <tr>
-                    <td>4th Semester</td>
-                    <td>13</td>
-                </tr>
-                <tr>
-                    <td>5th Semester</td>
-                    <td>14</td>
-                </tr>
-                <tr>
-                    <td>6th Semester</td>
-                    <td>12</td>
-                </tr>
-            </table>
-
+                <p1 id="n"></p1><br>
+                <p1 id="i"></p1><br>
+                <p1 id="d"></p1><br>
+                <p1 id="v"></p1><br>
+    
+                <div id="formtag">
+    
+                    <input type="text" name="semestername" id="sName" placeholder="Semester Name"/>
+                    <input type="number" name="credit" id="sCredit" placeholder="Credit"/>
+                    <input type="number" name="grade" id="sGrade" placeholder="SGPA"/>
+    
+                    <br><br><button type="button" id="addButton" onclick="addTable()">Add</button><br><br>
+                </div>
+    
             </center>
-
+    
+            <center>
+                <h2>SGPA Table</h2>
+                <table id="cgtable">
+                    <tr>
+                        <th>Semester</th>
+                        <th>Credit</th>
+                        <th>SGPA</th>
+                    </tr>
+                </table><br>
+    
+            </center>
+    
+            <center>
+                <button type="button" id="calculateButton" onclick="calculatePoint()">Calculate CGPA</button>
+                <button type="button" id="printButton" onclick="printPage()">Print</button>
+            </center>
+            
+        </div>
+    
+    
+        <div id="col2">
+    
+            <center>
+                <h2><u>Semester Wise Total Credit</u></h2>
+            </center>
+    
+            <div id="leftSide">
+                
+                <center>
+                    <p1>Old Curriculum</p1>
+                <table id="old">
+                    <tr>
+                        <th>Semester</th>
+                        <th>Credit</th>
+                    </tr>
+                    <tr>
+                        <td>1st Semester</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>2nd Semester</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>3rd Semester</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>4th Semester</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>5th Semester</td>
+                        <td>11</td>
+                    </tr>
+                    <tr>
+                        <td>6th Semester</td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td>7th Semester</td>
+                        <td>11</td>
+                    </tr>
+                    <tr>
+                        <td>8th Semester</td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td>9th Semester</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>10th Semester</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>11th Semester</td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td>12th Semester</td>
+                        <td>9</td>
+                    </tr>
+                </table>
+                </center>
+                
+    
+            </div>
+    
+            <div id="rightSide">
+    
+                <center>
+    
+                    <p1>New Curriculum</p1>
+                <table id="new">
+                    <tr>
+                        <th>Semester</th>
+                        <th>Credit</th>
+                    </tr>
+                    <tr>
+                        <td>1st Semester</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>2nd Semester</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>3rd Semester</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>4th Semester</td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td>5th Semester</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>6th Semester</td>
+                        <td>12</td>
+                    </tr>
+                </table>
+    
+                </center>
+    
+            </div>
+    
         </div>
 
     </div>
